@@ -12,9 +12,7 @@ body {
     position: relative;
     height: 80%;
     min-height: 600px;
-    background-image: url('res/menu-wave.png');
-    background-size: cover;
-    background-position: center;
+    
     opacity: 0.85;
     overflow: hidden;
     z-index: 1;
@@ -47,8 +45,8 @@ body {
 .panel-content p {
     font-size: 18px;
     margin-bottom: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .start-button {
