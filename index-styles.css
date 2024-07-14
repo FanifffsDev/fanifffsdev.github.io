@@ -12,7 +12,9 @@ body {
     position: relative;
     height: 80%;
     min-height: 600px;
-    
+    background-image: url('res/menu-wave.png');
+    background-size: cover;
+    background-position: center;
     opacity: 0.85;
     overflow: hidden;
     z-index: 1;
