@@ -5,8 +5,8 @@ body {
     background-image: url('res/menu-back.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-
 
 .wave-container {
     position: relative;
@@ -15,7 +15,7 @@ body {
     background-image: url('res/menu-wave.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.85;
+    opacity: 0.7;
     overflow: hidden;
     z-index: 1;
 }
@@ -36,7 +36,7 @@ body {
     padding: 40px;
     text-align: center;
     width: 100%;
-    z-index: 10;
+    z-index: 2;
 }
 
 .panel-content h2 {
@@ -64,3 +64,14 @@ body {
 .start-button:hover {
     background-color: #0056b3;
 }  
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
