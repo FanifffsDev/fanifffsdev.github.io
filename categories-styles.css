@@ -3,40 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #C8D5B9;
-  
-}
-
-.welcome-screen {
-  background-color: #f0f0f0;
-  padding: 50px;
-  text-align: center;
-}
-
-.welcome-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-content h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.welcome-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.start-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #000;
 }
 
 .levels-panel {
@@ -57,13 +24,17 @@ body {
 }
 
 .levels-content {
-  background-color: #FAF3DD;
-    filter: blur(10px);
+  background: linear-gradient(70deg, #4E0362, #C63264);;
+  filter: blur(10px);
   filter: none;
   border-radius: 8px;
   padding: 30px;
   max-width: 800px;
   width: 90%;
+}
+
+.levels-content h2{
+  color: #ffffff;
 }
 
 .category-cards {
