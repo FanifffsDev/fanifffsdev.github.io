@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathCom</title>
+  <link rel="stylesheet" href="categories-styles.css">
+</head>
+<body>
+  <div class="welcome-screen"> 
+    <div class="welcome-content"> 
+      <h1>Добро пожаловать в MathCom!</h1> 
+      <p>Это образовательный сайт, где вы можете практиковать базовые математические операции.</p> 
+      <button class="start-button">Начать</button> 
+    </div>
+  </div>
+
+    <div class="levels-panel">
+        <div class="levels-content">
+            <h2>Выберите категорию</h2>
+            <div class="category-cards">
+                <div class="category-card" data-category="addition">
+                    <div class="card-content">
+                        <h3>Сложение</h3>
+                        <p>Упражнения на сложение чисел.</p>
+                        <div class="card-description">
+                          <p>В этом разделе представлены интерактивные упражнения, направленные на развитие навыков сложения. Вы сможете тренировать сложение чисел в пределах 20, 100 и 1000, а также с десятичными дробями. Упражнения предлагаются в различных формах: ответы на вопросы, заполнение пропусков, совмещение примеров с правильными ответами. По мере прохождения упражнений вы сможете оценить свой прогресс и улучшить свои знания в области сложения.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="subtraction">
+                    <div class="card-content">
+                        <h3>Вычитание</h3>
+                        <p>Упражнения на вычитание чисел.</p>
+                        <div class="card-description">
+                          <p>В этом разделе представлены интерактивные упражнения, направленные на развитие навыков вычитания. Вы сможете тренировать вычитание чисел в пределах 20, 100 и 1000, а также с десятичными дробями. Упражнения предлагаются в различных формах: ответы на вопросы, заполнение пропусков, совмещение примеров с правильными ответами. По мере прохождения упражнений вы сможете оценить свой прогресс и улучшить свои знания в области вычитания.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="multiplication">
+                    <div class="card-content">
+                        <h3>Умножение</h3>
+                        <p>Упражнения на умножение чисел.</p>
+                        <div class="card-description">
+                            <p>В этом разделе представлены интерактивные упражнения, направленные на развитие навыков умножения. Вы сможете тренировать умножение чисел в пределах 100, а также с десятичными дробями. Упражнения предлагаются в различных формах: ответы на вопросы, заполнение пропусков, совмещение примеров с правильными ответами. По мере прохождения упражнений вы сможете оценить свой прогресс и улучшить свои знания в области умножения.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="division">
+                    <div class="card-content">
+                        <h3>Деление</h3>
+                        <p>Упражнения на деление чисел.</p>
+                        <div class="card-description">
+                          <p>В этом разделе представлены интерактивные упражнения, направленные на развитие навыков деления. Вы сможете тренировать деление чисел в пределах 100, а также с десятичными дробями. Упражнения предлагаются в различных формах: ответы на вопросы, заполнение пропусков, совмещение примеров с правильными ответами. По мере прохождения упражнений вы сможете оценить свой прогресс и улучшить свои знания в области деления.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="window.location.href = 'index.html';" class="close-button">Закрыть</button>
+        </div>
+
+        
+    <div class="category-panel">
+      <div class="category-content">
+          <h2>Категория</h2>
+          <p>Описание категории</p>
+          <div class="buttons">
+              <button class="theory-button">Теория</button>
+              <button class="practice-button">Практика</button>
+          </div>
+          <button class="close-button">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
