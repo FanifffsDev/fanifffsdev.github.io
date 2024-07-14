@@ -14,6 +14,13 @@ const cards = document.querySelectorAll('.category-card');
         categoryDescription.textContent = cardDescription;
   
         panel.style.display = 'flex';
+
+        const theoryButton = panel.querySelector('.buttons .theory-button')
+        
+        theoryButton.addEventListener('click', () => {
+          const category = card.dataset.category;
+          window.location.href = `categories/${category}/theory.html`
+        });
       });
     });
   
