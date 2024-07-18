@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#score {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#example {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    margin: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.1s ease;
+}
+
+button:hover {
+    background-color: #6cc26f;
+    border: 2px solid #6cc26f;
+}
+
+#wrong-answer-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+}
+
+#wrong-answer-panel p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#wrong-answer-panel button {
+    margin: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.1s ease;
+}
+
+#wrong-answer-panel button:hover {
+    background-color: #6cc26f;
+    border: 2px solid #6cc26f;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 998;
+}
+
+#next{
+  display: none;
+}
+
+#back-to-categories {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff00;
+    border: 2px solid #4CAF50;
+    border-width: 2px;
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-categories:hover {
+    border: 2px solid #6cc26f;
+    color: #6cc26f;
+}

@@ -16,10 +16,17 @@ const cards = document.querySelectorAll('.category-card');
         panel.style.display = 'flex';
 
         const theoryButton = panel.querySelector('.buttons .theory-button')
+
+        const practiceButton = panel.querySelector('.buttons .theory-button')
         
         theoryButton.addEventListener('click', () => {
           const category = card.dataset.category;
           window.location.href = `categories/${category}/theory.html`
+        });
+
+        practiceButton.addEventListener('click', () => {
+          const category = card.dataset.category;
+          window.location.href = `categories/${category}/practice.html`
         });
       });
     });
