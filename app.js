@@ -17,7 +17,8 @@ const cards = document.querySelectorAll('.category-card');
 
         const theoryButton = panel.querySelector('.buttons .theory-button')
 
-        const practiceButton = panel.querySelector('.buttons .theory-button')
+        theoryButton.textContent = "awe";
+        const practiceButton = panel.querySelector('.buttons .practice-button')
         
         theoryButton.addEventListener('click', () => {
           const category = card.dataset.category;
