@@ -23,6 +23,8 @@ document.getElementById('submit').addEventListener('click', () => {
 
     document.getElementById('next').click();
   } else {
+    score = 0;
+    document.getElementById('score').textContent = `Счет: ${score}`;
     document.getElementById('correct-answer').textContent = currentExample.result;
     document.getElementById('wrong-answer-panel').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
