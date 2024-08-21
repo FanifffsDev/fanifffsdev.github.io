@@ -1,7 +1,7 @@
 const examples = [];
         let score = 0;
         let timer;
-        const totalQuestions = 10;
+        const totalQuestions = 15;
 
         function generateExamples() {
             examples.length = 0;
@@ -14,7 +14,7 @@ const examples = [];
         }
 
         function displayExamples() {
-            document.getElementById('finishButton').style.display = 'none';
+            
             const examplesDiv = document.getElementById('examples');
             examplesDiv.innerHTML = '';
             examples.forEach((ex, index) => {
@@ -27,11 +27,24 @@ const examples = [];
         }
 
         function startTimer() {
-            let timeLeft = 30;
-            document.getElementById('timer').innerText = timeLeft + " секунд осталось";
+            let timeLeft = 45;
+            document.getElementById('timeLeft').innerText = timeLeft;
+            const timerElement = document.querySelector('.timer');
+        
+            timerElement.className = 'timer green';
+        
             timer = setInterval(() => {
                 timeLeft--;
-                document.getElementById('timer').innerText = timeLeft + " секунд осталось";
+                document.getElementById('timeLeft').innerText = timeLeft;
+        
+                if (timeLeft <= 20) {
+                    timerElement.className = 'timer yellow'; 
+                }
+                
+                if (timeLeft <= 10) {
+                    timerElement.className = 'timer red';
+                }
+        
                 if (timeLeft <= 0) {
                     clearInterval(timer);
                     submitTest();
@@ -40,13 +53,17 @@ const examples = [];
         }
 
         function submitTest() {
+            document.getElementById('finishButton').classList.add('hidden');
             clearInterval(timer);
             examples.forEach((ex, index) => {
                 const userAnswer = parseInt(document.getElementById(`answer${index}`).value);
+                const answerField = document.getElementById(`answer${index}`);
+                
                 if (userAnswer === ex.answer) {
                     score++;
+                    answerField.classList.add('correct'); 
                 } else {
-                    document.getElementById(`answer${index}`).classList.add('incorrect');
+                    answerField.classList.add('incorrect'); 
                 }
             });
             showResult();
@@ -64,7 +81,8 @@ const examples = [];
             generateExamples();
             displayExamples();
             startTimer();
-            document.getElementById('result').classList.add('hidden');
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('finishButton').style.display = 'inline-block';
         });
 
         generateExamples();

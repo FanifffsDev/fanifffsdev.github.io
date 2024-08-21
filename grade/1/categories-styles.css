@@ -162,7 +162,8 @@ body {
     }
 
     .category-content .theory-button,
-    .category-content .practice-button {
+    .category-content .practice-button, 
+    .category-content .test-button {
       background-color: #7E5BEF;
       color: #fff;
       border: none;
@@ -174,7 +175,8 @@ body {
     }
 
     .theory-button:hover,
-    .practice-button:hover {
+    .practice-button:hover, 
+    .test-button:hover {
       background-color: #4E0362;
     }
       

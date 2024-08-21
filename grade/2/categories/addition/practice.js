@@ -2,7 +2,6 @@ let score = 0;
 let currentExample = generateExample();
 
 function generateExample() {
-    score = parseInt(getSavedData('addition_score'));
     const a = Math.floor(Math.random() * 23) + 1;
     const b = Math.floor(Math.random() * 13) + 1;
     const example = `<span class="number">${a}</span> + <span class="number">${b}</span>`;

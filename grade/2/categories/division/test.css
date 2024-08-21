@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF9800;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #FF9800;
+    border-radius: 10px;
+    background-color: rgba(255, 152, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.timer.green {
+    color: #4CAF50;
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.timer.yellow {
+    color: #FF9800;
+    border-color: #FF9800;
+    background-color: rgba(255, 152, 0, 0.1);
+}
+
+.timer.red {
+    color: red;
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.example {
+    background-image: url('/res/notebook_texture2464.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.correct {
+    border: 2px solid #008000;
+    box-shadow: 0 0 5px rgb(0, 128, 0, 0.5);
+}
+.incorrect {
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.back-button {
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+.back-button:hover {
+    border-color: #6cc26f;
+    color: #6cc26f;
+}
+.practice-button {
+    background-color: #4CAF50;
+    color: white;
+}
+.practice-button:hover {
+    background-color: #6cc26f;
+}
+#result {
+    display: none;
+}

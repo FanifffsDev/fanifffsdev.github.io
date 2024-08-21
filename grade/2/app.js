@@ -19,6 +19,8 @@ const cards = document.querySelectorAll('.category-card');
 
         const practiceButton = panel.querySelector('.buttons .practice-button')
         
+        const testButton = panel.querySelector('.buttons .test-button')
+        
         theoryButton.addEventListener('click', () => {
           const category = card.dataset.category;
           window.location.href = `categories/${category}/theory.html`
@@ -27,6 +29,11 @@ const cards = document.querySelectorAll('.category-card');
         practiceButton.addEventListener('click', () => {
           const category = card.dataset.category;
           window.location.href = `categories/${category}/practice.html`
+        });
+
+        testButton.addEventListener('click', () => {
+          const category = card.dataset.category;
+          window.location.href = `categories/${category}/test.html`
         });
       });
     });

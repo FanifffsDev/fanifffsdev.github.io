@@ -1,7 +1,7 @@
 const examples = [];
 let score = 0;
 let timer;
-const totalQuestions = 10;
+const totalQuestions = 20;
 
 function generateExamples() {
     examples.length = 0;
@@ -26,7 +26,7 @@ function displayExamples() {
 }
 
 function startTimer() {
-    let timeLeft = 30;
+    let timeLeft = 45;
     document.getElementById('timeLeft').innerText = timeLeft;
     const timerElement = document.querySelector('.timer');
 
@@ -56,10 +56,13 @@ function submitTest() {
     clearInterval(timer);
     examples.forEach((ex, index) => {
         const userAnswer = parseInt(document.getElementById(`answer${index}`).value);
+        const answerField = document.getElementById(`answer${index}`);
+        
         if (userAnswer === ex.answer) {
             score++;
+            answerField.classList.add('correct'); 
         } else {
-            document.getElementById(`answer${index}`).classList.add('incorrect');
+            answerField.classList.add('incorrect'); 
         }
     });
     showResult();
