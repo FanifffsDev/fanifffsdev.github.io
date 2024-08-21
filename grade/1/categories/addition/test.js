@@ -27,21 +27,22 @@ const examples = [];
         }
 
         function startTimer() {
-            let timeLeft = 45;
-            document.getElementById('timeLeft').innerText = timeLeft;
+            let timeLeft = 300;
             const timerElement = document.querySelector('.timer');
         
             timerElement.className = 'timer green';
         
             timer = setInterval(() => {
-                timeLeft--;
-                document.getElementById('timeLeft').innerText = timeLeft;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                
+                document.getElementById('timeLeft').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
         
-                if (timeLeft <= 20) {
+                if (timeLeft <= 120) {
                     timerElement.className = 'timer yellow'; 
                 }
                 
-                if (timeLeft <= 10) {
+                if (timeLeft <= 60) {
                     timerElement.className = 'timer red';
                 }
         
@@ -49,6 +50,8 @@ const examples = [];
                     clearInterval(timer);
                     submitTest();
                 }
+        
+                timeLeft--;
             }, 1000);
         }
 

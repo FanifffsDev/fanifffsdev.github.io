@@ -6,8 +6,8 @@ const totalQuestions = 15;
 function generateExamples() {
     examples.length = 0;
     for (let i = 0; i < totalQuestions; i++) {
-        const a = Math.floor(Math.random() * 16) + 5;
-        const b = Math.floor(Math.random() * (a - 1)) + 1; // 1 до a-1
+        const a = Math.floor(Math.random() * 10) + 1;
+        const b = Math.floor(Math.random() * (a - 1)) + 1; 
         const answer = a - b;
         examples.push({ question: `${a} - ${b}`, answer });
     }
@@ -26,21 +26,22 @@ function displayExamples() {
 }
 
 function startTimer() {
-    let timeLeft = 45;
-    document.getElementById('timeLeft').innerText = timeLeft;
+    let timeLeft = 300;
     const timerElement = document.querySelector('.timer');
 
     timerElement.className = 'timer green';
 
     timer = setInterval(() => {
-        timeLeft--;
-        document.getElementById('timeLeft').innerText = timeLeft;
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        
+        document.getElementById('timeLeft').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
-        if (timeLeft <= 20) {
+        if (timeLeft <= 120) {
             timerElement.className = 'timer yellow'; 
         }
         
-        if (timeLeft <= 10) {
+        if (timeLeft <= 60) {
             timerElement.className = 'timer red';
         }
 
@@ -48,6 +49,8 @@ function startTimer() {
             clearInterval(timer);
             submitTest();
         }
+
+        timeLeft--;
     }, 1000);
 }
 
