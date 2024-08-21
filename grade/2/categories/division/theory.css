@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-top: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.example {
+  background-image: url('/res/notebook_texture2464.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.example h3 {
+  color: #FF9800;
+  margin-bottom: 10px;
+}
+
+.example p {
+  margin-bottom: 10px;
+}
+
+.example img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.back-button {
+  margin: 10px;
+  margin-left: 0px;
+  display: inline-block;
+  background-color: #ffffff00;
+  border: 2px solid #4CAF50;
+  border-width: 2px;
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  border: 2px solid #6cc26f;
+  color: #6cc26f;
+}
+
+.practice-button {
+  margin: 10px;
+  margin-left: 0px;
+  display: inline-block;
+  background-color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-width: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.practice-button:hover {
+  background-color: #6cc26f;
+  border: 2px solid #6cc26f;
+}
+
+#back-to-categories {
+  background-color: #2196F3;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Деление</title>
+  <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+  <h1>Деление</h1>
+  <div id="score">Счет: 0</div>
+  <div id="example"></div>
+  <input type="number" id="answer" placeholder="Введите ответ">
+  <button id="submit">Проверить</button>
+  <button id="next">Дальше</button>
+  <button id="back-to-categories" onclick="window.location.href = '/categories.html';">Назад к категориям</button>
+
+  <div id="wrong-answer-panel">
+    <p>Неправильный ответ. Правильный ответ:</p>
+    <p id="correct-answer"></p>
+    <button id="try-again">Попробовать еще раз</button>
+    <button id="try-again-theory">Как делить числа?</button>
+  </div>
+
+  <div id="overlay"></div>
+  <script src="practice.js"></script>
+  <script src="/save-sys.js"></script>
+</body>
+</html>
