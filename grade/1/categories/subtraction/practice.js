@@ -2,7 +2,7 @@ let score = 0
 let currentExample = generateExample();
 
 function generateExample() {
-  const a = Math.floor(Math.random() * 20) + 1;
+  const a = Math.floor(Math.random() * 10) + 1;
   const b = Math.floor(Math.random() * a) + 1;
   const example = `<span class="number">${a}</span> - <span class="number">${b}</span>`;
   document.getElementById('example').innerHTML = example;

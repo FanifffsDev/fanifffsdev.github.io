@@ -7,7 +7,7 @@ function generateExamples() {
     examples.length = 0;
     for (let i = 0; i < totalQuestions; i++) {
         const a = Math.floor(Math.random() * 16) + 5;
-        const b = Math.floor(Math.random() * (a - 1)) + 1; // 1 до a-1
+        const b = Math.floor(Math.random() * (a - 1)) + 1; 
         const answer = a - b;
         examples.push({ question: `${a} - ${b}`, answer });
     }

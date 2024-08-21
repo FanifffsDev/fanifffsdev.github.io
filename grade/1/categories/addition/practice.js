@@ -2,8 +2,8 @@ let score = 0;
 let currentExample = generateExample();
 
 function generateExample() {
-    const a = Math.floor(Math.random() * 23) + 1;
-    const b = Math.floor(Math.random() * 13) + 1;
+    const a = Math.floor(Math.random() * 10) + 1;
+    const b = Math.floor(Math.random() * 10) + 1;
     const example = `<span class="number">${a}</span> + <span class="number">${b}</span>`;
     document.getElementById('example').innerHTML = example;
 
